@@ -15,7 +15,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: LayoutBuilder(builder: (ctx, constraints) {}),
+      home: LayoutBuilder(
+        builder: (ctx, constraints) {
+          if (constraints.maxWidth > 800) {
+            return Text("data");
+          } else {
+            return Text("2");
+          }
+        },
+      ),
     );
   }
 }
