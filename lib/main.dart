@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/mobile/landing_page_mobile.dart';
+import 'package:portfolio/web/landing_page_web.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +20,9 @@ class MyApp extends StatelessWidget {
       home: LayoutBuilder(
         builder: (ctx, constraints) {
           if (constraints.maxWidth > 800) {
-            return Text("data");
+            return LandingPageWeb();
           } else {
-            return Text("2");
+            return LandingPageMobile();
           }
         },
       ),
