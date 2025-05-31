@@ -39,7 +39,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
         children: [
           // first section
           Container(
-            height: heightDevice - 56,
+            height: heightDevice - 56.0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -51,62 +51,66 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       decoration: BoxDecoration(
                         color: Colors.tealAccent,
                         borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          topRight: Radius.circular(20),
-                          bottomRight: Radius.circular(20),
+                          topLeft: Radius.circular(20.0),
+                          topRight: Radius.circular(20.0),
+                          bottomRight: Radius.circular(20.0),
                         ),
                       ),
                       padding: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 20,
+                        vertical: 10.0,
+                        horizontal: 20.0,
                       ),
-                      child: SansBold("Hello i'm", 15),
+                      child: SansBold("Hello i'm", 15.0),
                     ),
-                    SizedBox(height: 16),
-                    SansBold("Jongput Singkar", 55),
-                    Sans("Flutter developer", 30),
-                    SizedBox(height: 15),
+                    SizedBox(height: 16.0),
+                    SansBold("Jongput Singkar", 55.0),
+                    Sans("Flutter developer", 30.0),
+                    SizedBox(height: 15.0),
                     Row(
                       children: [
                         Icon(Icons.email),
-                        SizedBox(width: 20),
-                        Sans("jongput.singkar@gmail.com", 15),
+                        SizedBox(width: 20.0),
+                        Sans("jongput.singkar@gmail.com", 15.0),
                       ],
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 10.0),
                     Row(
                       children: [
-                        Image.asset("assets/github.png", height: 25, width: 25),
-                        SizedBox(width: 20),
-                        Sans("Jongput-singkar", 15),
+                        Image.asset(
+                          "assets/github.png",
+                          height: 25.0,
+                          width: 25.0,
+                        ),
+                        SizedBox(width: 20.0),
+                        Sans("Jongput-singkar", 15.0),
                       ],
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 10.0),
                     Row(
                       children: [
                         Icon(Icons.call),
-                        SizedBox(width: 20),
-                        Sans("+66 945615394", 15),
+                        SizedBox(width: 20.0),
+                        Sans("+66 945615394", 15.0),
                       ],
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 10.0),
                     Row(
                       children: [
                         Icon(Icons.location_pin),
-                        SizedBox(width: 20),
-                        Sans("35/1 warinchamrap ubonrachatanee 34190", 15),
+                        SizedBox(width: 20.0),
+                        Sans("35/1 warinchamrap ubonrachatanee 34190", 15.0),
                       ],
                     ),
                   ],
                 ),
                 CircleAvatar(
-                  radius: 147,
+                  radius: 147.0,
                   backgroundColor: Colors.tealAccent,
                   child: CircleAvatar(
-                    radius: 143,
+                    radius: 143.0,
                     backgroundColor: Colors.black,
                     child: CircleAvatar(
-                      radius: 140,
+                      radius: 140.0,
                       backgroundImage: AssetImage("assets/icon-512.png"),
                     ),
                   ),
@@ -121,14 +125,14 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             children: [
               Image.asset("assets/web.jpg", height: heightDevice / 1.7),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 10),
+                margin: EdgeInsets.symmetric(horizontal: 10.0),
                 height: heightDevice / 1.5,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SansBold("About me", 40),
-                    SizedBox(height: 15),
+                    SansBold("About me", 40.0),
+                    SizedBox(height: 15.0),
                     Container(
                       width: widthDevice / 2.5,
                       child: Sans(
@@ -136,7 +140,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         15,
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 10.0),
                     Row(
                       children: [
                         Container(
@@ -145,24 +149,24 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                               color: Colors.tealAccent,
                               style: BorderStyle.solid,
                             ),
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(5.0),
                           ),
-                          padding: EdgeInsets.all(7),
-                          child: Sans("flutter", 15),
+                          padding: EdgeInsets.all(7.0),
+                          child: Sans("flutter", 15.0),
                         ),
-                        SizedBox(width: 7),
+                        SizedBox(width: 7.0),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.tealAccent,
                               style: BorderStyle.solid,
                             ),
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(5.0),
                           ),
-                          padding: EdgeInsets.all(7),
-                          child: Sans("firebase", 15),
+                          padding: EdgeInsets.all(7.0),
+                          child: Sans("firebase", 15.0),
                         ),
-                        SizedBox(width: 7),
+                        SizedBox(width: 7.0),
                       ],
                     ),
                   ],
@@ -176,77 +180,23 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SansBold("What i do?", 40),
+                SansBold("What i do?", 40.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Card(
-                      elevation: 30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset(
-                              'assets/webL.png',
-                              height: 200,
-                              width: 200,
-                            ),
-                            SizedBox(height: 10),
-                            SansBold("Web development", 15),
-                          ],
-                        ),
-                      ),
+                    AnimatedCardWeb(
+                      imagePath: "assets/webL.png",
+                      text: "Web development",
                     ),
-                    Card(
-                      elevation: 30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset(
-                              'assets/app.png',
-                              height: 200,
-                              width: 200,
-                              fit: BoxFit.contain,
-                            ),
-                            SizedBox(height: 10),
-                            SansBold("App development", 15),
-                          ],
-                        ),
-                      ),
+                    AnimatedCardWeb(
+                      imagePath: 'assets/app.png',
+                      text: "App development",
+                      fit: BoxFit.contain,
+                      reverse: true,
                     ),
-                    Card(
-                      elevation: 30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset(
-                              'assets/firebase.png',
-                              height: 200,
-                              width: 200,
-                              fit: BoxFit.contain,
-                            ),
-                            SizedBox(height: 10),
-                            SansBold("Back-end development", 15),
-                          ],
-                        ),
-                      ),
+                    AnimatedCardWeb(
+                      imagePath: "assets/firebase.png",
+                      text: "Back-end development",
                     ),
                   ],
                 ),
@@ -255,30 +205,66 @@ class _LandingPageWebState extends State<LandingPageWeb> {
           ),
           // fourth section
           Container(
-            height: heightDevice,
+            height: heightDevice - 56.0,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SansBold("Contact me", 40),
+                SansBold("Contact me", 40.0),
+                SizedBox(height: 30.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         TextForm(
-                          heading: "first",
+                          heading: "First Name",
                           hintText: "Enter first name here",
-                          width: 350,
+                          width: 350.0,
                         ),
+                        SizedBox(height: 15.0),
                         TextForm(
-                          heading: "comment",
-                          hintText: "Enter comment here",
-                          width: 350,
-                          maxLine: 6,
+                          heading: "Email",
+                          hintText: "Enter your email here",
+                          width: 350.0,
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        TextForm(
+                          heading: "Last Name",
+                          width: 350.0,
+                          hintText: "Enter last name here",
+                        ),
+                        SizedBox(height: 15.0),
+                        TextForm(
+                          heading: "Phone number",
+                          width: 350.0,
+                          hintText: "Please type your phone number",
                         ),
                       ],
                     ),
                   ],
+                ),
+                SizedBox(height: 50.0),
+                TextForm(
+                  heading: "Message",
+                  width: widthDevice / 1.5,
+                  hintText: "message here",
+                  maxLine: 6,
+                ),
+                SizedBox(height: 10.0),
+                MaterialButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  height: 60.0,
+                  minWidth: 200.0,
+                  color: Colors.tealAccent,
+                  child: SansBold("Submit", 20.0),
+                  elevation: 20.0,
+                  onPressed: () {},
                 ),
               ],
             ),
